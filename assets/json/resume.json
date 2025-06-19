@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Jules Dupont",
+    "label": "QIST MSc student @ TU Delft",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "julesdupont02@gmail.com",
+    "phone": "(+33)609781351",
+    "url": "https://jules02.github.io/",
+    "summary": "French-born student with a strong interest in quantum computing and solid foundations in computer science.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",

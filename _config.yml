@@ -4,10 +4,10 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Jules
-middle_name: R.
+middle_name:
 last_name: Dupont
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Le moyen le plus sûr est de me contacter sur mon mail perso.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -15,7 +15,7 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+lang: fr # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://jules02.github.io # the base hostname & protocol for your site
@@ -47,7 +47,7 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: true

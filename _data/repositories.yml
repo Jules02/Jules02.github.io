@@ -1,14 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - Jules02
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - Jules02/sib-sms
+  - Jules02/PositionBasedDynamic
+  - Jules02/CompilationProject
