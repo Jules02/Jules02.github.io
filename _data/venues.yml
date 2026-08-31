@@ -1,9 +1,5 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+# Styles the `abbr={...}` venue badges in your bibliography.
+#
+# "PRX":
+#   url: https://journals.aps.org/prx/
+#   color: "#00369f"
