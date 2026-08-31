@@ -12,6 +12,14 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-description">{{ page.description }}</p>
+    {% if page.github %}
+      <p class="post-meta project-links">
+        <a href="{{ page.github }}" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+          {{ page.github | remove: "https://github.com/" | remove: "http://github.com/" }}
+        </a>
+      </p>
+    {% endif %}
   </header>
 
   <article>
