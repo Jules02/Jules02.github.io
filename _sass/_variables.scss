@@ -25,6 +25,15 @@ $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
 
 $grey-color: #828282 !default;
+
+// Neutral accent used for links, hover states and CV badges.
+// Light mode: #6c757d passes WCAG AA on white (4.69:1) while staying clearly
+// distinct from the near-black body text (4.48:1). Going darker makes links
+// indistinguishable from body copy, since links are colour-only until hover.
+$grey-accent: #6c757d !default;
+$grey-accent-dark: #495057 !default;
+$grey-accent-light: #adb5bd !default;
+$grey-accent-lighter: #dee2e6 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
 $grey-color-dark: #1c1c1d;
 $grey-900: #212529;
