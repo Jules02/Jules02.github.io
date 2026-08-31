@@ -10,4 +10,4 @@ category: research
 **Supervised by Dr Miriam Backens**
 
 A year-long research project carried out alongside my studies at École des
-Mines, roughly 1.5 days per week, through the school's *Parcours Recherche* track.
+Mines, roughly 1.5 days per week, through the school's _Parcours Recherche_ track.
