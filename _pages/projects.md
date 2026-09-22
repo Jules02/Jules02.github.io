@@ -5,7 +5,7 @@ permalink: /projects/
 description: Research projects and competition work.
 nav: true
 nav_order: 3
-display_categories: [research, competitions]
+display_categories: [research, coursework, competitions]
 horizontal: false
 ---
 
