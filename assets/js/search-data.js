@@ -49,11 +49,26 @@ ninja.data = [{
           description: "Learning the latent dynamics of physical fields with V-JEPA — 1st place out of 25 teams",
           section: "Projects",handler: () => {
               window.location.href = "/projects/hack-the-worlds/";
+            },},{id: "projects-learning-graph-invariants-with-pqcs",
+          title: 'Learning Graph Invariants with PQCs',
+          description: "Mini-project for the Applied Quantum Algorithms course (Leiden, Q3–Q4 2026)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/inductive-bias-pqc/";
+            },},{id: "projects-layer-vqe",
+          title: 'Layer VQE',
+          description: "Mini-project for the Applied Quantum Algorithms course (Delft, Q3–Q4 2026)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/layer-vqe/";
             },},{id: "projects-mbqc-and-the-zx-calculus",
           title: 'MBQC and the ZX-Calculus',
-          description: "Parcours Recherche at Centre INRIA de Nancy, on measurement-based quantum computing",
+          description: "Parcours Recherche at Centre INRIA de Nancy, on measurement-based quantum computing and the ZX-Calculus",
           section: "Projects",handler: () => {
               window.location.href = "/projects/mbqc-zx-calculus/";
+            },},{id: "projects-quantum-gan-for-bars-and-stripes",
+          title: 'Quantum GAN for Bars-and-Stripes',
+          description: "Final project for the Quantum Computation and Quantum Programming course (Leiden, Q2 2026)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/qgan/";
             },},{id: "projects-svm-based-face-detection",
           title: 'SVM-based face detection',
           description: "TIPE research project at Lycée Saint-Louis, on support vector machines for face detection",
