@@ -13,7 +13,7 @@ category: research
 A year-long research project carried out alongside my studies at École des
 Mines, roughly 1.5 days per week, through the school's _Parcours Recherche_ track.
 
-As this was my first real encounter with quantum computing, the project first involved learning its fundamentals. 
+As this was my first real encounter with quantum computing, the project first involved learning its fundamentals.
 I then studied the ZX-calculus — a graphical language for reasoning about quantum computation, the Measurement-Based Quantum Computing (MBQC) paradigm, and how the former can help describe the latter.
 From that point, my supervisor asked me to look at _flows_, which are mathematical conditions involving graph-theory that guarantee a measurement pattern can be run deterministically,
 despite measurement outcomes being random.

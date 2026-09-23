@@ -8,4 +8,3 @@ github: https://github.com/joaomartins06/Layer-Variational-Quantum-Eigensolver
 ---
 
 **Q3–Q4 2026 · [Applied Quantum Algorithms course (TU Delft)](https://studiegids.tudelft.nl/courses/study-guide/educations/14691)**
-
