@@ -53,8 +53,14 @@
       "startDate": "2023-09-01",
       "endDate": "",
       "courses": [
-        "5th best French graduate school of engineering, or Grande École (L'Étudiant, 2025)",
-        "Coursework: Algorithms and Complexity, Quantum Physics, Foundations of Computing, Computer Architecture, Software Engineering, Introduction to Blockchains, Complex Analysis"
+        "Algorithms and Complexity",
+        "Quantum Physics",
+        "Foundations of Computing",
+        "Computer Architecture",
+        "Software Engineering",
+        "Introduction to Blockchains",
+        "Complex Analysis",
+        "Defense and Security Challenges in the 21st Century (at Sciences Po)"
       ]
     },
     {
@@ -65,10 +71,23 @@
       "area": "Two-year undergraduate programme preparing for entrance exams to France's most prestigious Grandes Écoles",
       "startDate": "2021-09-01",
       "endDate": "2023-07-01",
-      "courses": ["Coursework: Mathematics, Physics, Computer Science"]
+      "courses": ["Mathematics, Physics, Computer Science"]
     }
   ],
   "work": [
+    {
+      "name": "Quobly",
+      "position": "Joint Interdisciplinary Project",
+      "location": "Delft, NL",
+      "url": "https://www.jointinterdisciplinaryproject.nl",
+      "startDate": "2026-09-01",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+        "Implementing Quantum Reservoir Computing (QRC) for credit card fraud detection",
+        "Working in an interdisciplinary team, alongside students from outside the quantum field"
+      ]
+    },
     {
       "name": "Cybermines",
       "position": "President of the school's IT and cybersecurity club (15 members)",
@@ -108,7 +127,7 @@
     },
     {
       "name": "Research Project — Parcours Recherche at Centre INRIA de Nancy",
-      "url": "https://www.inria.fr/fr/centre-inria-universite-lorraine",
+      "url": "/projects/mbqc-zx-calculus/",
       "startDate": "2024-09-01",
       "endDate": "2025-07-01",
       "summary": "Measurement-Based Quantum Computing and the ZX-Calculus",
@@ -119,7 +138,7 @@
     },
     {
       "name": "Research Project — TIPE at Lycée Saint-Louis",
-      "url": "",
+      "url": "/projects/svm-face-detection/",
       "startDate": "2022-09-01",
       "endDate": "2023-06-01",
       "summary": "Support Vector Machines for computerized face detection",
@@ -160,15 +179,15 @@
   "certificates": [
     {
       "name": "MOOC Gestion de Projet",
-      "date": "2024",
-      "issuer": "gestiondeprojet.pm",
+      "date": "",
+      "issuer": "",
       "url": "https://certification.gestiondeprojet.pm/GdP22AP/GdP22PC-DUtssBRlA.pdf",
       "icon": "fa-solid fa-diagram-project"
     },
     {
       "name": "Driving licence (Permis B)",
-      "date": "2023",
-      "issuer": "France",
+      "date": "",
+      "issuer": "",
       "url": "",
       "icon": "fa-solid fa-car"
     }

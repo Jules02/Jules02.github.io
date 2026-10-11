@@ -27,4 +27,8 @@ latest_posts:
 
 I am a French-born student with solid foundations in mathematics and computer science and a strong interest in quantum technologies.
 
-After two years at [École Nationale Supérieure des Mines de Nancy](https://mines-nancy.univ-lorraine.fr) with a major in [Computer Science & Engineering](https://www.depinfonancy.net), I moved to the Netherlands for the [MSc Quantum Information Science & Technology (QIST)](https://www.tudelft.nl/onderwijs/opleidingen/masters/qist/msc-quantum-information-science-technology). It is a joint programme between TU Delft and the University of Leiden which "encompasses the understanding, design, construction and investigation of quantum information processing systems such as quantum computers, quantum communication networks, and quantum sensors".
+After two years at [École Nationale Supérieure des Mines de Nancy](https://mines-nancy.univ-lorraine.fr) with a major in Computer Science & Engineering, I moved to the Netherlands for the [MSc Quantum Information Science & Technology (QIST)](https://www.tudelft.nl/onderwijs/opleidingen/masters/qist/msc-quantum-information-science-technology).
+
+From November 2026, I am doing my master's thesis in the [Applied Quantum Algorithms](https://aqa.liacs.nl) group in Leiden, supervised by Prof. Vedran Dunjko and Andrii Kurkin. I am working on quantum machine learning, more specifically on IQP-QCBMs in the train-on-classical, deploy-on-quantum paradigm.
+
+Afterwards, I would like to pursue a PhD on a similar topic, and I am already looking for opportunities. Feel free to get in touch!

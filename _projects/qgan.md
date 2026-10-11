@@ -11,4 +11,4 @@ github: https://github.com/Jules02/qcqp_qgan
 
 Three-student group project in which we implemented a Quantum Generative Adversarial Network (QGAN) for generating Bars-and-Stripes patterns.
 The generator was a Parametrized Quantum Circuit (PQC) adversarially trained by a discriminator realized as a classical Neural Network.
-After training and performance benchmarking we also explored topics such as choosing the right ansatz for the PQC and using the Wasserstein distance in the loss functions.
+After training and performance benchmarking we also explored topics such as choosing the right ansatz for the PQC and using the Wasserstein distance in the loss function.

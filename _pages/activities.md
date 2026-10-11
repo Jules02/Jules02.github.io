@@ -9,14 +9,14 @@ nav_order: 5
 
 ## Teaching assistantships
 
-<!--
-Add your TA positions here, most recent first. A simple pattern:
+### [Homologation for QIST: Information Theory for QIST (ITQ) — TU Delft](https://studiegids.tudelft.nl/opleidingen/study-guide/educations/30413#/details/31347)
 
-### Course name — Institution
-*Teaching Assistant, semester year*
+_Teaching Assistant, Q1 26-27_
 
-One or two lines on what you did: which tutorials you ran, how many students,
-material you wrote, grading responsibilities.
--->
+Revised course material and helped students solve exercises during 2 weekly contact hours. Assisted Prof. Jos Weber in his annual magic trick.
 
-_Coming soon._
+### [Homologation for QIST: Computer Science for QIST (CSQ) — TU Delft](https://studiegids.tudelft.nl/opleidingen/study-guide/educations/30413#/details/31347)
+
+_Teaching Assistant, Q1 26-27_
+
+Revised course material and helped students solve exercises during 2 weekly contact hours.
