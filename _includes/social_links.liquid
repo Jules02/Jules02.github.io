@@ -1,0 +1,44 @@
+<!--
+  Labelled link cards for the about page. Handles only the socials this site
+  uses; add a case here if you add one to _data/socials.yml.
+-->
+<div class="social-links">
+  {% for social in site.data.socials %}
+    {% case social[0] %}
+      {% when 'email' %}
+        {% assign href = social[1] | encode_email | prepend: 'mailto:' %}
+        {% assign icon = 'fa-solid fa-envelope' %}
+        {% assign label = 'Email' %}
+        {% assign handle = social[1] %}
+        {% assign external = false %}
+      {% when 'github_username' %}
+        {% assign href = 'https://github.com/' | append: social[1] %}
+        {% assign icon = 'fa-brands fa-github' %}
+        {% assign label = 'GitHub' %}
+        {% assign handle = social[1] %}
+        {% assign external = true %}
+      {% when 'linkedin_username' %}
+        {% assign href = 'https://www.linkedin.com/in/' | append: social[1] %}
+        {% assign icon = 'fa-brands fa-linkedin' %}
+        {% assign label = 'LinkedIn' %}
+        {% assign handle = site.first_name | append: ' ' | append: site.last_name %}
+        {% assign external = true %}
+      {% else %}
+        {% continue %}
+    {% endcase %}
+    <a
+      class="social-link"
+      href="{{ href }}"
+      {% if external %}
+        target="_blank" rel="external nofollow noopener"
+      {% endif %}
+    >
+      <span class="social-link-icon"><i class="{{ icon }}"></i></span>
+      <span class="social-link-text">
+        <span class="social-link-label">{{ label }}</span>
+        <span class="social-link-handle">{{ handle }}</span>
+      </span>
+      <i class="ti ti-arrow-up-right social-link-arrow" aria-hidden="true"></i>
+    </a>
+  {% endfor %}
+</div>

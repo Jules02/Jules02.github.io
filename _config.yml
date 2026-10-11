@@ -6,14 +6,12 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Jules
 middle_name:
 last_name: Dupont
-contact_note: >
-  The best way to reach me is via my personal email.
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal academic website of Jules Dupont, MSc student in Quantum Information
   Science & Technology at TU Delft and Leiden University.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, based on the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: Jules Dupont, quantum information, quantum computing, TU Delft, Leiden University, QIST, computer science
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.svg # emoji, or an image name in /assets/img/
@@ -425,7 +423,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:

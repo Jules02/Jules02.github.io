@@ -1,0 +1,403 @@
+/*******************************************************************************
+ * Modern layer
+ *
+ * A thin restyle on top of al-folio: IBM Plex Sans/Mono, a zinc palette,
+ * hairline borders, and a hatched band under page headers. Everything lives here and is imported last, so removing
+ * this file (and its import in assets/css/main.scss) restores the base theme.
+ ******************************************************************************/
+
+$font-sans:
+  "IBM Plex Sans",
+  ui-sans-serif,
+  system-ui,
+  -apple-system,
+  "Segoe UI",
+  sans-serif;
+$font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+// Zinc scale (Tailwind). Light-mode accent #52525b is 7.7:1 on white;
+// dark-mode accent #a1a1aa is 7.8:1 on #09090b.
+:root {
+  --global-bg-color: #ffffff;
+  --global-text-color: #09090b;
+  --global-text-color-light: #71717a;
+  --global-theme-color: #52525b;
+  --global-hover-color: #09090b;
+  --global-divider-color: #e4e4e7;
+  --global-card-bg-color: #ffffff;
+  --global-code-bg-color: #f4f4f5;
+  --edge-color: #e4e4e7;
+  --edge-strong-color: #a1a1aa;
+  --pattern-color: rgba(9, 9, 11, 0.08);
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #09090b;
+  --global-text-color: #fafafa;
+  --global-text-color-light: #a1a1aa;
+  --global-theme-color: #a1a1aa;
+  --global-hover-color: #fafafa;
+  --global-divider-color: #27272a;
+  --global-card-bg-color: #09090b;
+  --global-code-bg-color: #18181b;
+  --edge-color: #27272a;
+  --edge-strong-color: #52525b;
+  --pattern-color: rgba(250, 250, 250, 0.08);
+}
+
+// Typography
+
+body {
+  font-family: $font-sans;
+  font-size: 1rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar,
+.btn {
+  font-family: $font-sans;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+code,
+pre,
+kbd {
+  font-family: $font-mono;
+}
+
+::selection {
+  background: var(--global-text-color);
+  color: var(--global-bg-color);
+}
+
+// Navbar: translucent with a blur, hairline underneath
+
+.navbar {
+  opacity: 1;
+  border-bottom: 1px solid var(--edge-color);
+  background-color: color-mix(in srgb, var(--global-bg-color) 80%, transparent);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+}
+
+.navbar.navbar-light {
+  .navbar-brand {
+    font-weight: 500;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    font-size: 0.925rem;
+    color: var(--global-text-color-light);
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: var(--global-text-color);
+    }
+  }
+
+  .navbar-nav .nav-item.active > .nav-link {
+    font-weight: 500;
+    color: var(--global-text-color);
+  }
+}
+
+// Page header: title, mono description, then a hatched band
+
+.post-header {
+  position: relative;
+  padding-bottom: 2.75rem;
+  margin-bottom: 2rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1.75rem;
+    border-top: 1px solid var(--edge-color);
+    border-bottom: 1px solid var(--edge-color);
+    background-image: repeating-linear-gradient(315deg, var(--pattern-color) 0, var(--pattern-color) 1px, transparent 0, transparent 50%);
+    background-size: 10px 10px;
+  }
+}
+
+// Whatever closes the header (.desc, .post-description, .post-meta) sits flush,
+// so the band is the same distance from the text on every page.
+.post-header > :last-child {
+  margin-bottom: 0;
+}
+
+.post-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.post-description,
+.post-header .desc,
+.post-meta {
+  font-family: $font-mono;
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+}
+
+// Section headings inside content get a hairline rule
+
+.post article h2:not(.card-title):not(.category),
+.post > h2,
+.publications h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--edge-color);
+}
+
+// Links in running text: foreground colour, underline does the signalling
+
+.post p a,
+.post li a,
+.post article td a {
+  color: var(--global-text-color);
+  text-decoration: underline;
+  text-decoration-color: var(--edge-strong-color);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.15s ease;
+
+  &:hover {
+    color: var(--global-text-color);
+    text-decoration-color: var(--global-text-color);
+  }
+}
+
+// Cards: flat, hairline border, border darkens on hover instead of lifting
+
+.card {
+  border: 1px solid var(--edge-color);
+  border-radius: 0.75rem;
+  box-shadow: none;
+  overflow: hidden;
+  transition: border-color 0.15s ease;
+
+  .card-title {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .card-text {
+    color: var(--global-text-color-light);
+  }
+}
+
+.card.hoverable,
+.card.hoverable:hover {
+  box-shadow: none;
+}
+
+.card.hoverable:hover {
+  border-color: var(--edge-strong-color);
+}
+
+.projects h2.category {
+  font-family: $font-mono;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: left;
+  color: var(--global-text-color-light);
+  border-bottom-color: var(--edge-color);
+}
+
+.projects .card .card-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects .card .card-text {
+  font-size: 0.9rem;
+}
+
+// CV: mono date pills instead of the solid badges
+
+.badge.danger-color-dark,
+.cv .card .list-group-item .badge.danger-color-dark {
+  font-family: $font-mono;
+  font-weight: 500 !important;
+  font-size: 0.75rem;
+  text-transform: none !important;
+  color: var(--global-text-color) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--edge-color);
+  border-radius: 999px;
+  box-shadow: none;
+}
+
+.date-column .location {
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  color: var(--global-text-color-light);
+}
+
+.list-group-item {
+  border-color: var(--edge-color);
+}
+
+// Keep the footer at the bottom of the viewport on short pages (e.g. about)
+
+body.sticky-bottom-footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > [role="main"] {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+
+  > footer {
+    flex-shrink: 0;
+  }
+}
+
+// Footer: no slab of colour, just a hairline and muted mono text
+
+footer.fixed-bottom,
+footer.sticky-bottom {
+  background-color: var(--global-bg-color);
+  border-top: 1px solid var(--edge-color);
+  font-family: $font-mono;
+  font-size: 0.75rem;
+
+  .container {
+    color: var(--global-text-color-light);
+  }
+
+  a {
+    color: var(--global-text-color);
+
+    &:hover {
+      color: var(--global-text-color);
+      text-decoration: underline;
+    }
+  }
+}
+
+// About page: framed photo and social section
+
+.profile {
+  img {
+    border: 1px solid var(--edge-color);
+    border-radius: 0.75rem;
+    box-shadow: none !important;
+  }
+
+  .more-info {
+    font-family: $font-mono;
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+  }
+}
+
+.social {
+  margin-top: 2.5rem;
+
+  .contact-note {
+    font-family: $font-mono;
+    font-size: 0.75rem;
+    color: var(--global-text-color-light);
+  }
+}
+
+// Labelled link cards (_includes/social_links.liquid)
+
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.75rem;
+  text-align: left;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 0.75rem 0.875rem;
+  border: 1px solid var(--edge-color);
+  border-radius: 0.75rem;
+  color: var(--global-text-color);
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    color: var(--global-text-color);
+    text-decoration: none;
+    border-color: var(--edge-strong-color);
+  }
+}
+
+.social-link-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--edge-color);
+  border-radius: 0.5rem;
+  background-color: var(--global-code-bg-color);
+  font-size: 1.15rem;
+}
+
+.social-link-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.3;
+}
+
+.social-link-label {
+  font-weight: 500;
+}
+
+.social-link-handle {
+  overflow: hidden;
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  color: var(--global-text-color-light);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.social-link-arrow {
+  color: var(--global-text-color-light);
+  transition:
+    transform 0.15s ease,
+    color 0.15s ease;
+}
+
+.social-link:hover .social-link-arrow {
+  color: var(--global-text-color);
+  transform: translate(2px, -2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
