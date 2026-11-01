@@ -31,7 +31,7 @@
       "location": "Delft, NL",
       "url": "https://www.tudelft.nl/onderwijs/opleidingen/masters/qist/msc-quantum-information-science-technology",
       "studyType": "MSc Quantum Information Science & Technology",
-      "area": "Pursued as a double degree, completing my engineering diploma from École des Mines",
+      "area": "Double degree, completing my engineering diploma from École des Mines | Level: 9.0/10 (first-year courses)",
       "startDate": "2025-09-01",
       "endDate": "",
       "courses": [
@@ -78,14 +78,14 @@
     {
       "name": "Quobly",
       "position": "Joint Interdisciplinary Project",
-      "location": "Delft, NL",
+      "location": "Remote",
       "url": "https://www.jointinterdisciplinaryproject.nl",
       "startDate": "2026-09-01",
-      "endDate": "",
+      "endDate": "2026-11-01",
       "summary": "",
       "highlights": [
-        "Implementing Quantum Reservoir Computing (QRC) for credit card fraud detection",
-        "Working in an interdisciplinary team, alongside students from outside the quantum field"
+        "Implemented Quantum Reservoir Computing (QRC) for credit card fraud detection",
+        "Worked in an interdisciplinary team, alongside students from outside the quantum field"
       ]
     },
     {

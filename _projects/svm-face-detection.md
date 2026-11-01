@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SVM-based face detection
+title: SVM-Based Face Detection
 description: TIPE research project at Lycée Saint-Louis, on support vector machines for face detection
 importance: 3
 category: coursework
@@ -14,6 +14,6 @@ github: https://github.com/Jules02/TIPE
 My _Travail d'Initiative Personnelle Encadré_ — the short research project French students carry out during _classe préparatoire_, presented at the
 competitive entrance exams to the _Grandes Écoles_.
 
-I decided to work on the use of Support Vector Machines (SVM) for computerized face detection. Histogram of Oriented Gradients (HOG) was used for feature description, and SVM performed the classification.
+I decided to work on the use of Support Vector Machines (SVMs) for face detection. Histograms of Oriented Gradients (HOG) were used for feature description, and SVM performed the classification.
 The performance of my model was compared against a baseline that used a Convolutional Neural Network (CNN).
-The year's theme was _La Ville_ (Cities) so I introduced my work in the context of real-time face detection for CCTV.
+The year's theme was _La Ville_ (The City), so I introduced my work in the context of real-time face detection for CCTV.

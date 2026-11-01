@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Research projects and competition work.
+description: Coursework projects, research and competition work.
 nav: true
 nav_order: 3
-display_categories: [research, coursework, competitions]
+display_categories: [coursework, research, competitions]
 horizontal: false
 ---
 
