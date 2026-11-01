@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "projects",
-          description: "Research projects and competition work.",
+          description: "Coursework projects, research and competition work.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -47,7 +47,7 @@ ninja.data = [{
               window.location.href = "/projects/layer-vqe/";
             },},{id: "projects-mbqc-and-the-zx-calculus",
           title: 'MBQC and the ZX-Calculus',
-          description: "Parcours Recherche at Centre INRIA de Nancy, on measurement-based quantum computing and the ZX-Calculus",
+          description: "Parcours Recherche at Centre INRIA de Nancy, on measurement-based quantum computing and the ZX-calculus",
           section: "Projects",handler: () => {
               window.location.href = "/projects/mbqc-zx-calculus/";
             },},{id: "projects-quantum-gan-for-bars-and-stripes",
@@ -56,7 +56,7 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/qgan/";
             },},{id: "projects-svm-based-face-detection",
-          title: 'SVM-based face detection',
+          title: 'SVM-Based Face Detection',
           description: "TIPE research project at Lycée Saint-Louis, on support vector machines for face detection",
           section: "Projects",handler: () => {
               window.location.href = "/projects/svm-face-detection/";
