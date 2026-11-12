@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 418" width="1040" height="418" role="img" aria-label="Sliding-window QRC: for each transaction, the card's last L transactions are fed one per layer into a fresh qubit register (reset input qubits, encode, evolve the whole register); the register is measured once at the end and a logistic regression turns the expectation values into a fraud score.">
+<!-- Source of docs/figures/blog_qrc_protocol.png. Render: rsvg-convert -z 2 -b white blog_qrc_protocol.svg -o blog_qrc_protocol.png (needs IBM Plex Sans and IBM Plex Mono installed). -->
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <path d="M0,1 L9,5 L0,9 z" fill="#4A5068"/>
+  </marker>
+  <marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <path d="M0,1 L9,5 L0,9 z" fill="#3F3AD6"/>
+  </marker>
+</defs>
+<rect width="1040" height="418" fill="#FFFFFF"/>
+<text x="24" y="71" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#7A8099">transactions</text>
+<g stroke-dasharray="3 3" opacity=".5"><rect x="150" y="52" width="30" height="30" rx="6" fill="#E8E7FB" stroke="#3F3AD6"/><text x="165.0" y="72" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="12" font-weight="500" fill="#3F3AD6">A</text></g>
+<g><rect x="188" y="52" width="30" height="30" rx="6" fill="#F1F3F8" stroke="#C5CCDD"/><text x="203.0" y="72" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="12" font-weight="500" fill="#7A8099">C</text></g>
+<g><rect x="226" y="52" width="30" height="30" rx="6" fill="#F1F3F8" stroke="#C5CCDD"/><text x="241.0" y="72" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="12" font-weight="500" fill="#7A8099">B</text></g>
+<g><rect x="264" y="52" width="30" height="30" rx="6" fill="#E8E7FB" stroke="#3F3AD6"/><text x="279.0" y="72" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="12" font-weight="500" fill="#3F3AD6">A</text></g>
+<g><rect x="302" y="52" width="30" height="30" rx="6" fill="#F1F3F8" stroke="#C5CCDD"/><text x="317.0" y="72" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="12" font-weight="500" fill="#7A8099">D</text></g>
+<g><rect x="340" y="52" width="30" height="30" rx="6" fill="#F1F3F8" stroke="#C5CCDD"/><text x="355.0" y="72" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="12" font-weight="500" fill="#7A8099">B</text></g>
+<g><rect x="378" y="52" width="30" height="30" rx="6" fill="#E8E7FB" stroke="#3F3AD6"/><text x="393.0" y="72" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="12" font-weight="500" fill="#3F3AD6">A</text></g>
+<g><rect x="416" y="52" width="30" height="30" rx="6" fill="#F1F3F8" stroke="#C5CCDD"/><text x="431.0" y="72" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="12" font-weight="500" fill="#7A8099">C</text></g>
+<g><rect x="454" y="52" width="30" height="30" rx="6" fill="#F1F3F8" stroke="#C5CCDD"/><text x="469.0" y="72" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="12" font-weight="500" fill="#7A8099">B</text></g>
+<g><rect x="492" y="52" width="30" height="30" rx="6" fill="#E8E7FB" stroke="#3F3AD6"/><text x="507.0" y="72" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="12" font-weight="500" fill="#3F3AD6">A</text></g>
+<g><rect x="530" y="52" width="30" height="30" rx="6" fill="#F1F3F8" stroke="#C5CCDD"/><text x="545.0" y="72" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="12" font-weight="500" fill="#7A8099">D</text></g>
+<g><rect x="568" y="52" width="30" height="30" rx="6" fill="#F1F3F8" stroke="#C5CCDD"/><text x="583.0" y="72" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="12" font-weight="500" fill="#7A8099">C</text></g>
+<g><rect x="606" y="52" width="30" height="30" rx="6" fill="#3F3AD6" stroke="#3F3AD6"/><text x="621.0" y="72" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="12" font-weight="500" fill="#FFFFFF">A</text></g>
+<line x1="150" y1="96" x2="666" y2="96" stroke="#C5CCDD" stroke-width="1" marker-end="url(#ar)" opacity=".8"/>
+<text x="676" y="100" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="10.5" fill="#7A8099">time</text>
+<path d="M264,46 V40 H636 V46" fill="none" stroke="#3F3AD6" stroke-width="1.2"/>
+<text x="450.0" y="32" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#3F3AD6">card A’s last L = 4 transactions</text>
+<text x="646.0" y="71" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="10.5" fill="#3F3AD6">← to classify</text>
+<line x1="128" y1="186" x2="760" y2="186" stroke="#9AA1B8" stroke-width="1.2"/>
+<text x="122" y="190" text-anchor="end" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#7A8099">|0⟩</text>
+<line x1="128" y1="214" x2="760" y2="214" stroke="#9AA1B8" stroke-width="1.2"/>
+<text x="122" y="218" text-anchor="end" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#7A8099">|0⟩</text>
+<line x1="128" y1="272" x2="760" y2="272" stroke="#9AA1B8" stroke-width="1.2"/>
+<text x="122" y="276" text-anchor="end" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#7A8099">|0⟩</text>
+<line x1="128" y1="300" x2="760" y2="300" stroke="#9AA1B8" stroke-width="1.2"/>
+<text x="122" y="304" text-anchor="end" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#7A8099">|0⟩</text>
+<line x1="86" y1="180" x2="86" y2="220" stroke="#C5CCDD" stroke-width="1.5"/>
+<text x="78" y="204.0" text-anchor="end" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#4A5068">input</text>
+<line x1="86" y1="266" x2="86" y2="306" stroke="#C5CCDD" stroke-width="1.5"/>
+<text x="78" y="290.0" text-anchor="end" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="11" fill="#4A5068">memory</text>
+<rect x="150" y="172" width="30" height="56" rx="5" fill="#FFFFFF" stroke="#7A8099"/>
+<text x="165" y="204.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="10.5" fill="#4A5068">|0⟩</text>
+<rect x="190" y="172" width="52" height="56" rx="6" fill="#E8E7FB" stroke="#3F3AD6" stroke-width="1.2"/>
+<text x="216" y="203.0" text-anchor="middle" font-family="IBM Plex Sans, -apple-system, Helvetica, sans-serif" font-size="14" font-style="italic" fill="#3F3AD6">x<tspan dy="3.5" font-size="9.5" font-style="normal">t−3</tspan><tspan dy="-3.5"></tspan></text>
+<rect x="252" y="164" width="36" height="150" rx="7" fill="#F1F3F8" stroke="#7A8099" stroke-width="1.2"/>
+<text x="270" y="244.0" text-anchor="middle" font-family="IBM Plex Sans, -apple-system, Helvetica, sans-serif" font-size="15" font-style="italic" fill="#151A2C">U</text>
+<rect x="298" y="172" width="30" height="56" rx="5" fill="#FFFFFF" stroke="#7A8099"/>
+<text x="313" y="204.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="10.5" fill="#4A5068">|0⟩</text>
+<rect x="338" y="172" width="52" height="56" rx="6" fill="#E8E7FB" stroke="#3F3AD6" stroke-width="1.2"/>
+<text x="364" y="203.0" text-anchor="middle" font-family="IBM Plex Sans, -apple-system, Helvetica, sans-serif" font-size="14" font-style="italic" fill="#3F3AD6">x<tspan dy="3.5" font-size="9.5" font-style="normal">t−2</tspan><tspan dy="-3.5"></tspan></text>
+<rect x="400" y="164" width="36" height="150" rx="7" fill="#F1F3F8" stroke="#7A8099" stroke-width="1.2"/>
+<text x="418" y="244.0" text-anchor="middle" font-family="IBM Plex Sans, -apple-system, Helvetica, sans-serif" font-size="15" font-style="italic" fill="#151A2C">U</text>
+<rect x="446" y="172" width="30" height="56" rx="5" fill="#FFFFFF" stroke="#7A8099"/>
+<text x="461" y="204.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="10.5" fill="#4A5068">|0⟩</text>
+<rect x="486" y="172" width="52" height="56" rx="6" fill="#E8E7FB" stroke="#3F3AD6" stroke-width="1.2"/>
+<text x="512" y="203.0" text-anchor="middle" font-family="IBM Plex Sans, -apple-system, Helvetica, sans-serif" font-size="14" font-style="italic" fill="#3F3AD6">x<tspan dy="3.5" font-size="9.5" font-style="normal">t−1</tspan><tspan dy="-3.5"></tspan></text>
+<rect x="548" y="164" width="36" height="150" rx="7" fill="#F1F3F8" stroke="#7A8099" stroke-width="1.2"/>
+<text x="566" y="244.0" text-anchor="middle" font-family="IBM Plex Sans, -apple-system, Helvetica, sans-serif" font-size="15" font-style="italic" fill="#151A2C">U</text>
+<rect x="594" y="172" width="30" height="56" rx="5" fill="#FFFFFF" stroke="#7A8099"/>
+<text x="609" y="204.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="10.5" fill="#4A5068">|0⟩</text>
+<rect x="634" y="172" width="52" height="56" rx="6" fill="#E8E7FB" stroke="#3F3AD6" stroke-width="1.2"/>
+<text x="660" y="203.0" text-anchor="middle" font-family="IBM Plex Sans, -apple-system, Helvetica, sans-serif" font-size="14" font-style="italic" fill="#3F3AD6">x<tspan dy="3.5" font-size="9.5" font-style="normal">t</tspan><tspan dy="-3.5"></tspan></text>
+<rect x="696" y="164" width="36" height="150" rx="7" fill="#F1F3F8" stroke="#7A8099" stroke-width="1.2"/>
+<text x="714" y="244.0" text-anchor="middle" font-family="IBM Plex Sans, -apple-system, Helvetica, sans-serif" font-size="15" font-style="italic" fill="#151A2C">U</text>
+<path d="M279.0,85 C279.0,130 216,118 216,168" fill="none" stroke="#3F3AD6" stroke-width="1.1" opacity=".55" marker-end="url(#arA)"/>
+<path d="M393.0,85 C393.0,130 364,118 364,168" fill="none" stroke="#3F3AD6" stroke-width="1.1" opacity=".55" marker-end="url(#arA)"/>
+<path d="M507.0,85 C507.0,130 512,118 512,168" fill="none" stroke="#3F3AD6" stroke-width="1.1" opacity=".55" marker-end="url(#arA)"/>
+<path d="M621.0,85 C621.0,130 660,118 660,168" fill="none" stroke="#3F3AD6" stroke-width="1.1" opacity=".55" marker-end="url(#arA)"/>
+<text x="165" y="336" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="10" fill="#7A8099">reset</text>
+<text x="216" y="336" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="10" fill="#7A8099">encode</text>
+<text x="270" y="336" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="10" fill="#7A8099">evolve</text>
+<path d="M150,357 V362 H732 V357" fill="none" stroke="#C5CCDD" stroke-width="1.2"/>
+<text x="441.0" y="380" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="10.5" fill="#4A5068">one layer per transaction · fresh register for every window and every shot</text>
+<rect x="768" y="176" width="26" height="20" rx="4" fill="#FFFFFF" stroke="#4A5068" stroke-width="1.1"/>
+<path d="M774,191 A7.5,7.5 0 0 1 788,191" fill="none" stroke="#4A5068" stroke-width="1.1"/>
+<line x1="781" y1="191" x2="787" y2="181" stroke="#4A5068" stroke-width="1.1"/>
+<rect x="768" y="204" width="26" height="20" rx="4" fill="#FFFFFF" stroke="#4A5068" stroke-width="1.1"/>
+<path d="M774,219 A7.5,7.5 0 0 1 788,219" fill="none" stroke="#4A5068" stroke-width="1.1"/>
+<line x1="781" y1="219" x2="787" y2="209" stroke="#4A5068" stroke-width="1.1"/>
+<rect x="768" y="262" width="26" height="20" rx="4" fill="#FFFFFF" stroke="#4A5068" stroke-width="1.1"/>
+<path d="M774,277 A7.5,7.5 0 0 1 788,277" fill="none" stroke="#4A5068" stroke-width="1.1"/>
+<line x1="781" y1="277" x2="787" y2="267" stroke="#4A5068" stroke-width="1.1"/>
+<rect x="768" y="290" width="26" height="20" rx="4" fill="#FFFFFF" stroke="#4A5068" stroke-width="1.1"/>
+<path d="M774,305 A7.5,7.5 0 0 1 788,305" fill="none" stroke="#4A5068" stroke-width="1.1"/>
+<line x1="781" y1="305" x2="787" y2="295" stroke="#4A5068" stroke-width="1.1"/>
+<line x1="760" y1="0" x2="760" y2="0"/>
+<line x1="802" y1="178" x2="802" y2="308" stroke="#C5CCDD" stroke-width="1.5"/>
+<line x1="808" y1="239.0" x2="822" y2="239.0" stroke="#4A5068" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="828" y="197.0" width="16" height="14" fill="#F1F3F8" stroke="#7A8099" stroke-width="1"/>
+<rect x="828" y="211.0" width="16" height="14" fill="#F1F3F8" stroke="#7A8099" stroke-width="1"/>
+<rect x="828" y="225.0" width="16" height="14" fill="#F1F3F8" stroke="#7A8099" stroke-width="1"/>
+<rect x="828" y="239.0" width="16" height="14" fill="#F1F3F8" stroke="#7A8099" stroke-width="1"/>
+<rect x="828" y="253.0" width="16" height="14" fill="#F1F3F8" stroke="#7A8099" stroke-width="1"/>
+<rect x="828" y="267.0" width="16" height="14" fill="#F1F3F8" stroke="#7A8099" stroke-width="1"/>
+<text x="836" y="187.0" text-anchor="middle" font-family="IBM Plex Sans, -apple-system, Helvetica, sans-serif" font-size="13" fill="#151A2C">⟨<tspan font-style="italic">O</tspan><tspan dy="3.5" font-size="9.5" font-style="italic">k</tspan><tspan dy="-3.5">⟩</tspan></text>
+<text x="836" y="301.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="10" fill="#7A8099">features</text>
+<line x1="850" y1="239.0" x2="868" y2="239.0" stroke="#4A5068" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="872" y="211.0" width="104" height="56" rx="7" fill="#FFFFFF" stroke="#151A2C" stroke-width="1.4"/>
+<text x="924.0" y="236.0" text-anchor="middle" font-family="IBM Plex Sans, -apple-system, Helvetica, sans-serif" font-size="12.5" font-weight="500" fill="#151A2C">logistic</text>
+<text x="924.0" y="252.0" text-anchor="middle" font-family="IBM Plex Sans, -apple-system, Helvetica, sans-serif" font-size="12.5" font-weight="500" fill="#151A2C">regression</text>
+<text x="924.0" y="202.0" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, Menlo, monospace" font-size="10" fill="#3F3AD6">only trained part</text>
+<line x1="924.0" y1="267.0" x2="924.0" y2="301.0" stroke="#4A5068" stroke-width="1.3" marker-end="url(#ar)"/>
+<text x="924.0" y="319.0" text-anchor="middle" font-family="IBM Plex Sans, -apple-system, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#151A2C">fraud score</text>
+</svg>

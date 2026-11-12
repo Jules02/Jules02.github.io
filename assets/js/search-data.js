@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-projects",
+  },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-projects",
           title: "projects",
           description: "Coursework projects, research and competition work.",
           section: "Navigation",
@@ -30,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/activities/";
           },
-        },{id: "projects-hack-the-world-s",
+        },{id: "post-quantum-reservoir-computing-for-credit-card-fraud-detection",
+        
+          title: "Quantum reservoir computing for credit-card fraud detection",
+        
+        description: "Joint Interdisciplinary Project with Quobly",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/jip-quantum-reservoir-computing/";
+          
+        },
+      },{id: "projects-hack-the-world-s",
           title: 'Hack the World(s)',
           description: "Learning the latent dynamics of physical fields with V-JEPA — 1st place out of 25 teams",
           section: "Projects",handler: () => {
@@ -40,6 +58,11 @@ ninja.data = [{
           description: "Mini-project for the Applied Quantum Algorithms course (Leiden, Q3–Q4 2025–26)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/inductive-bias-pqc/";
+            },},{id: "projects-quantum-reservoir-computing-for-fraud-detection",
+          title: 'Quantum Reservoir Computing for Fraud Detection',
+          description: "Joint Interdisciplinary Project with Quobly (Delft, Q1 2026–27)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/jip-quantum-reservoir-computing/";
             },},{id: "projects-layer-vqe",
           title: 'Layer VQE',
           description: "Mini-project for the Applied Quantum Algorithms course (Delft, Q3–Q4 2025–26)",
