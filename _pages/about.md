@@ -25,7 +25,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a French-born student with solid foundations in mathematics and computer science and a strong interest in quantum technologies.
+I am a French student with solid foundations in mathematics and computer science and a strong interest in quantum technologies.
 
 After two years at [École Nationale Supérieure des Mines de Nancy](https://mines-nancy.univ-lorraine.fr) with a major in Computer Science & Engineering, I moved to the Netherlands for the [MSc Quantum Information Science & Technology (QIST)](https://www.tudelft.nl/onderwijs/opleidingen/masters/qist/msc-quantum-information-science-technology).
 

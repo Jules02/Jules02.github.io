@@ -79,7 +79,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: notes # blog_name will be displayed in your blog page
-blog_description: notes on quantum information, computing, and things I am learning
+blog_description: Notes on quantum computing and things I am learning
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

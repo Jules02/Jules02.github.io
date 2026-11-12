@@ -167,6 +167,111 @@ kbd {
   border-bottom: 1px solid var(--edge-color);
 }
 
+.post article h3 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+// Boxed asides: a Markdown blockquote followed by {: .box data-label="…"}
+
+.post article blockquote.box {
+  background: var(--global-code-bg-color);
+  border: 1px solid var(--edge-color);
+  border-radius: 8px;
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.95rem;
+
+  &::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+  }
+
+  p {
+    margin-bottom: 0.75rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  p:first-of-type strong {
+    font-size: 1.05rem;
+  }
+
+  ul {
+    margin-bottom: 0;
+    padding-left: 1.25rem;
+  }
+
+  li + li {
+    margin-top: 0.5rem;
+  }
+}
+
+// Data tables: <table class="data-table">, numeric cells with class="num"
+
+.post article table.data-table {
+  width: 100%;
+  margin: 1.5rem 0 0.5rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+
+  th,
+  td {
+    padding: 0.5rem 0.75rem;
+    font-size: inherit;
+    text-align: left;
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-left: 0;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-right: 0;
+  }
+
+  .num {
+    text-align: right;
+  }
+
+  thead th {
+    font-weight: 600;
+    border-bottom: 1px solid var(--edge-strong-color);
+  }
+
+  tbody td {
+    border-bottom: 1px solid var(--edge-color);
+  }
+
+  tr.group th {
+    padding-top: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+  }
+}
+
+// Footnotes (kramdown renders them as div.footnotes): light rule above
+
+.post article .footnotes {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--edge-color);
+}
+
 // Links in running text: foreground colour, underline does the signalling
 
 .post p a,
@@ -231,6 +336,167 @@ kbd {
 
 .projects .card .card-text {
   font-size: 0.9rem;
+}
+
+// Blog index (_pages/blog.md): hairline-separated rows, mono meta, tag pills
+
+.blog-filters,
+.blog-item-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-filters {
+  margin-bottom: 1.5rem;
+}
+
+.blog .blog-filters a,
+.blog .blog-item-tags a {
+  display: inline-block;
+  padding: 0.1rem 0.6rem;
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  color: var(--global-text-color-light);
+  text-decoration: none;
+  border: 1px solid var(--edge-color);
+  border-radius: 999px;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+
+  &:hover {
+    color: var(--global-text-color);
+    border-color: var(--edge-strong-color);
+  }
+}
+
+.blog-list {
+  margin: 0 0 2.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--edge-color);
+
+  &:first-child {
+    padding-top: 0.5rem;
+  }
+}
+
+.blog-item-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.blog-item-meta {
+  margin-bottom: 0.35rem;
+  font-family: $font-mono;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+
+  span {
+    margin: 0 0.35rem;
+  }
+}
+
+.blog .blog-item-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+
+  a {
+    color: var(--global-text-color);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: var(--edge-strong-color);
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+    }
+  }
+
+  i {
+    color: var(--global-text-color-light);
+    vertical-align: middle;
+  }
+}
+
+.blog-item-desc {
+  margin-bottom: 0.75rem;
+  color: var(--global-text-color-light);
+}
+
+.blog-item-thumb {
+  flex: 0 0 13rem;
+  align-self: center;
+  overflow: hidden;
+  aspect-ratio: 5 / 2;
+  background: #ffffff;
+  border: 1px solid var(--edge-color);
+  border-radius: 0.5rem;
+  transition: border-color 0.15s ease;
+
+  img {
+    width: 100%;
+    height: 100%;
+    padding: 0.35rem;
+    object-fit: contain;
+  }
+}
+
+.blog-item:hover .blog-item-thumb {
+  border-color: var(--edge-strong-color);
+}
+
+@media (max-width: 575.98px) {
+  .blog-item.has-thumb {
+    flex-direction: column-reverse;
+  }
+
+  .blog-item-thumb {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+
+.blog .pagination {
+  gap: 0.4rem;
+
+  .page-item .page-link {
+    padding: 0.35rem 0.8rem;
+    font-family: $font-mono;
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    background: transparent;
+    border: 1px solid var(--edge-color);
+    border-radius: 0.5rem;
+
+    &:hover {
+      color: var(--global-text-color);
+      border-color: var(--edge-strong-color);
+    }
+  }
+
+  .page-item.active .page-link {
+    color: var(--global-bg-color);
+    background-color: var(--global-text-color);
+    border-color: var(--global-text-color);
+  }
+
+  .page-item.disabled .page-link {
+    opacity: 0.4;
+  }
 }
 
 // CV: mono date pills instead of the solid badges
