@@ -510,7 +510,7 @@ The LSTM result shows that the window contains far more information than either 
 
 <blockquote class="box" data-label="Methodology">
 <p><strong>Tune every model with equal care</strong></p>
-<p>With default settings, the QRC was ahead of the equal-width ESN by 0.031 AP at L = 15. But before claiming anything, we gave both models the same tuning budget: one Optuna study each,[^optuna] with 100 trials, tuning three parameters of the reservoir and its input encoding plus the readout regularisation, scored on the validation period. Tuning improved the QRC by 0.056 and the ESN by 0.189: the latter ended up ahead by 0.102, on all 10 seeds, including the 7 never used during tuning. Hence, the initial edge came from the default settings, not from the quantum reservoir.</p>
+<p markdown="span">With default settings, the QRC was ahead of the equal-width ESN by 0.031 AP at L = 15. But before claiming anything, we gave both models the same tuning budget: one Optuna study each,[^optuna] with 100 trials, tuning three parameters of the reservoir and its input encoding plus the readout regularisation, scored on the validation period. Tuning improved the QRC by 0.056 and the ESN by 0.189: the latter ended up ahead by 0.102, on all 10 seeds, including the 7 never used during tuning. Hence, the initial edge came from the default settings, not from the quantum reservoir.</p>
 <figure class="tune-fig">
 <style>
 .tune-fig svg { width: 100%; max-width: 720px; height: auto; display: block; margin: 0 auto; }
